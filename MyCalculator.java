@@ -39,7 +39,7 @@ public class MyCalculator extends Application {
 		// Create menu for V E H and put them into menu bar
 		MenuBar menuBar = new MenuBar();
 		menuBar.prefWidthProperty().bind(primaryStage.widthProperty());
-    		Menu menuV = new Menu("檢視(V)");
+    		Menu menuV = new Menu("(檢視V)");
     		Menu menuE = new Menu("編輯(E)");  
     		Menu menuH = new Menu("說明(H)");
     		menuBar.getMenus().addAll(menuV, menuE, menuH);
@@ -156,7 +156,7 @@ public class MyCalculator extends Application {
     		gridpane.add(buttonDivide, 4, 16);
     		buttonDivide.setOnAction(e -> {
     			temporary[0] = Double.parseDouble(text.getText());
-    			text.setText("/");
+    			text.setText("");
     			function[3] = true;
     		});
   
@@ -203,7 +203,7 @@ public class MyCalculator extends Application {
     		gridpane.add(buttonMultiply, 4, 18);
     		buttonMultiply.setOnAction(e -> {
     			temporary[0] = Double.parseDouble(text.getText());
-    			text.setText("*");
+    			text.setText("");
     			function[2] = true;
     		});
   
@@ -223,7 +223,7 @@ public class MyCalculator extends Application {
     		gridpane.add(buttonAdd, 4, 21);
     		buttonAdd.setOnAction(e -> {
     			temporary[0] = Double.parseDouble(text.getText());
-    			text.setText("+");
+    			text.setText("");
     			function[0] = true;
     		});
    
@@ -260,7 +260,7 @@ public class MyCalculator extends Application {
     		gridpane.add(buttonSub, 4, 20);
     		buttonSub.setOnAction(e -> {
     			temporary[0] = Double.parseDouble(text.getText());
-    			text.setText("-");
+    			text.setText("");
     			function[1] = true;
     		});
   
@@ -278,7 +278,7 @@ public class MyCalculator extends Application {
 		buttonPoint.setMinSize(40, 40);
     		gridpane.add(buttonPoint, 3, 21);
     		buttonPoint.setOnAction(e -> {
-        		String num = .;
+        		String num = ".";
         		text.setText(text.getText() + num);
 		});
  
